@@ -1,0 +1,45 @@
+----- 01/07/22 14:50:28 -----
+Traceback (most recent call last):
+  File "C:/Users/HP/OneDrive/Desktop/project AI chess game/gui.py", line 171, in play_as
+    game = make_AI_move(game, color)
+  File "C:/Users/HP/OneDrive/Desktop/project AI chess game/gui.py", line 145, in make_AI_move
+    new_game = chess.make_move(game, chess.get_AI_move(game, AI_SEARCH_DEPTH))
+  File "C:\Users\HP\OneDrive\Desktop\project AI chess game\chess.py", line 1316, in get_AI_move
+    if find_in_book(game):
+  File "C:\Users\HP\OneDrive\Desktop\project AI chess game\chess.py", line 1402, in find_in_book
+    book_file = open("book.txt")
+FileNotFoundError: [Errno 2] No such file or directory: 'book.txt'
+
+Playing as BLACK:
+	
+	rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+-----------------------------
+
+----- 01/07/22 14:55:34 -----
+Traceback (most recent call last):
+  File "C:/Users/HP/OneDrive/Desktop/project AI chess game/gui.py", line 150, in play_as
+    print_board(game.board, color)
+  File "C:/Users/HP/OneDrive/Desktop/project AI chess game/gui.py", line 86, in print_board
+    print_empty_board()
+  File "C:/Users/HP/OneDrive/Desktop/project AI chess game/gui.py", line 54, in print_empty_board
+    paint_dark_squares(BOARD_COLOR[1])
+IndexError: list index out of range
+
+Playing as BLACK:
+	
+	rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+-----------------------------
+
+----- 01/07/22 21:03:32 -----
+Traceback (most recent call last):
+  File "C:/Users/HP/OneDrive/Desktop/project AI chess game/gui.py", line 160, in play_as
+    print_board(game.board, color)
+  File "C:/Users/HP/OneDrive/Desktop/project AI chess game/gui.py", line 104, in print_board
+    SCREEN.blit(pygame.transform.scale(BLACK_KING,   (SQUARE_SIDE,SQUARE_SIDE)), get_square_rect(chess.bb2str(position)))
+NameError: name 'get_square_rect' is not defined
+
+Playing as WHITE:
+	
+	rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+-----------------------------
+
